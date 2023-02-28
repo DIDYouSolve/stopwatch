@@ -47,26 +47,28 @@ h2{
 
 .btn_start{
   border: none;
-  width: 100px;
+  width: 150px;
   height: 30px;
   background-color: #1d3557;
   color: white;
 }
 .btn_stop{
   border: none;
-  width: 100px;
+  width: 150px;
   height: 30px;
   background-color: #e63946;
   color: white 
 }
 .btn_reset{
   border: none;
-  width: 100px;
+  width: 50px;
   height: 30px;
   background-color: whitesmoke;
   color: black;  
 }
-
+.btn_container{
+  margin-top: 50px;
+}
 button:hover{
   cursor: pointer;
 }
