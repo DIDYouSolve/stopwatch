@@ -38,6 +38,13 @@ btn_set_title.addEventListener('click', () => {
 btn_reset_title.addEventListener('click', () => {
   page1.classList.remove('hide');
   page2.classList.add('hide');
+  clearInterval(timer);
+  hour = 0;
+  minute = 0;
+  second = 0;
+  setElements(hour, minute, second);
+  btn_stop.classList.add('hide');
+  btn_start.classList.remove('hide');
 });
 
 btn_start.addEventListener('click', () => {
