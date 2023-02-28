@@ -9,6 +9,7 @@ const page1 = document.querySelector('.page1');
 const page2 = document.querySelector('.page2');
 const div_title = document.querySelector('.title');
 const inputBox = document.querySelector('.input_box');
+const btn_reset_title = document.querySelector('.btn_reset_title');
 
 let hour = 0;
 let minute = 0;
@@ -32,6 +33,11 @@ btn_set_title.addEventListener('click', () => {
   page1.classList.add('hide');
   page2.classList.remove('hide');
   div_title.innerHTML = inputBox.value;
+});
+
+btn_reset_title.addEventListener('click', () => {
+  page1.classList.remove('hide');
+  page2.classList.add('hide');
 });
 
 btn_start.addEventListener('click', () => {
