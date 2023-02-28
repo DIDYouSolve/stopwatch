@@ -4,6 +4,11 @@ const el_second = document.querySelector('.second');
 const btn_start = document.querySelector('.btn_start');
 const btn_stop = document.querySelector('.btn_stop');
 const btn_reset = document.querySelector('.btn_reset');
+const btn_set_title = document.querySelector('.btn_set_title');
+const page1 = document.querySelector('.page1');
+const page2 = document.querySelector('.page2');
+const div_title = document.querySelector('.title');
+const inputBox = document.querySelector('.input_box');
 
 let hour = 0;
 let minute = 0;
@@ -22,6 +27,12 @@ function setElements(h, m, s) {
 
 setElements(hour, minute, second);
 let timer = 0;
+
+btn_set_title.addEventListener('click', () => {
+  page1.classList.add('hide');
+  page2.classList.remove('hide');
+  div_title.innerHTML = inputBox.value;
+});
 
 btn_start.addEventListener('click', () => {
   timer = setInterval(() => {
