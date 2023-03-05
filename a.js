@@ -21,9 +21,13 @@ function numFormat(num) {
 }
 
 function setElements(h, m, s) {
-  el_hour.innerHTML = numFormat(h);
-  el_minute.innerHTML = numFormat(m);
-  el_second.innerHTML = numFormat(s);
+  const hour = numFormat(h);
+  const minute = numFormat(m);
+  const second = numFormat(s);
+  el_hour.innerHTML = hour;
+  el_minute.innerHTML = minute;
+  el_second.innerHTML = second;
+  document.querySelector('title').innerHTML = `${hour}:${minute}:${second}`;
 }
 
 setElements(hour, minute, second);
